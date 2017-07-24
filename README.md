@@ -7,6 +7,7 @@ library(tidyr)
 
 
 #Reading
+
 train_subject<-tbl_df(read.table("train/subject_train.txt"))
 test_subject<-tbl_df(read.table("test/subject_test.txt"))
 
@@ -20,6 +21,7 @@ activity_lables<-tbl_df(read.table("activity_labels.txt"))
 features <- tbl_df(read.table("features.txt"))
 
 #Merging
+
 colnames(activity_lables)<- c("V1","Activity")
 setnames(features, names(features), c("featureNum", "featureName"))
 
@@ -45,7 +47,7 @@ mergedData2<-select(mergedData1, contains("number"), contains("Activity"), conta
 
 str(mergedData2)    
 
-#FInd means for all variables
+#Find means for all variables
         
 TidyData<-  mergedData2%>%
         group_by(number, Activity)%>%
