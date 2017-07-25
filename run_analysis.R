@@ -50,7 +50,7 @@ TidyData<-  mergedData2%>%
 print(TidyData)
 
 #save results in to the txt file
-write.table(TidyData, file = "tidyData.txt", rownames = FALSE)
+write.table(TidyData, file = "tidyData.txt", row.name = FALSE)
 
        
 
