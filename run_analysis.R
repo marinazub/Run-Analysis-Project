@@ -42,11 +42,15 @@ mergedData2<-select(mergedData1, contains("number"), contains("Activity"), conta
 
 str(mergedData2)    
 
-#FInd means for all variables
+#Find means for all variables
         
 TidyData<-  mergedData2%>%
         group_by(number, Activity)%>%
         summarise_each(funs( mean))
 print(TidyData)
+
+#save results in to the txt file
+write.table(TidyData, file = "tidyData.txt", rownames = FALSE)
+
        
 
