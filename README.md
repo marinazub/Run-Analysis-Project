@@ -1,9 +1,6 @@
-# week4-peergradedassingmnet-
-coursera Cleaning and Collecting Data
----
-title: "R Notebook"
-output: html_notebook
----
+
+coursera Cleaning and Collecting Data/ run analysis project
+
 
 ##Description of run_Analyis.R
 The following chapters are describing how the script run_analysis.R is processing the data files to output the tidyData.txt.
