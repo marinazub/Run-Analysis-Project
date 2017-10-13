@@ -1,5 +1,5 @@
 
-<h1>Coursera Cleaning and Collecting Data/ run analysis project</h1>
+<h1> Run analysis project</h1>
 
 
 <h2>Description of run_Analyis.R</h2>
@@ -19,7 +19,7 @@ Six appropriate files was loaded in R and saved  in to the tables with tbl_df fo
 Next step is to merge the files one by one.
 Fisrt sub-step is to work with activities and features, renaming the columns.
 
-Second sib-step is to merge  the files: subject (number) and exercies (train_y_train/test_y_test) -> activities lables and than -> add the measures of the all activities, adding the namus of columns beforehand (train_x_train/test_x_test).
+Second sub-step is to merge  the files: subject (number) and exercies (train_y_train/test_y_test) -> activities lables and than -> add the measures of the all activities, adding the namus of columns beforehand (train_x_train/test_x_test).
 
 Third sub-step  is to merge the entire datasets for test and train. Because they have the samename columns, it's the smart move to go through row binding function.
 
